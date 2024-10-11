@@ -1,0 +1,6 @@
+pillow
+google-generativeai
+fal_client
+rel
+websocket-client
+requests
