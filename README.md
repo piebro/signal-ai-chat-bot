@@ -13,7 +13,12 @@ This project implements an AI-powered chatbot that integrates with Signal messen
 
 1. A dedicated phone number for the Signal bot
 2. A device to link the Signal app to the API
-3. [signal-cli-rest-api](https://github.com/bbernhard/signal-cli-rest-api) set up and running
+3. [signal-cli-rest-api](https://github.com/bbernhard/signal-cli-rest-api) set up and running. Use the `json-rpc` for faster chat responses. The command could look like this:
+   ```bash
+   podman run -p 8080:8080 \
+      -v $HOME/.local/share/signal-api:/home/.local/share/signal-cli \
+      -e 'MODE=json-rpc' docker.io/bbernhard/signal-cli-rest-api
+   ```
 
 ## Setup and Installation
 
@@ -42,7 +47,7 @@ This project implements an AI-powered chatbot that integrates with Signal messen
 
 4. Run the Signal AI bot:
    ```bash
-   python main.py
+   python src/main.py
    ```
 
 ## Usage
@@ -65,6 +70,12 @@ You can customize various settings in the `config.py` file, including:
 - Image sizes
 - Trusted phone numbers
 - API endpoints
+
+## Future Ideas
+
+- [ ] Run on a Raspberry PI Zero 2W
+- [ ] Use function calling for the bot with useful functions
+- [ ] Use the bot in groupe chats
 
 ## Contributing
 
