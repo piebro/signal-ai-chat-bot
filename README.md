@@ -81,6 +81,10 @@ You can customize various settings in the `config.py` file, including:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## More Projects
+
+More generative art, statistics or other projects of me can be found here: [piebro.github.io](https://piebro.github.io?ref=github.com/piebro/signal-ai-chat-bot).
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
